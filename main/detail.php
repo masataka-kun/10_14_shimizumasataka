@@ -7,6 +7,8 @@ include('functions.php');
 
 // ログイン状態のチェック
 checkSessionId();
+
+// メニュー読み込み
 $menu = menu();
 
 // getで送信されたidを取得
@@ -75,21 +77,6 @@ if ($status == false) {
                     <?= $menu ?>
                 </ul>
             </div>
-
-            <!-- <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="select.php">データ一覧</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="rank.php">ランキング一覧</a>
-                    </li>
-                </ul>
-            </div> -->
         </nav>
     </header>
 

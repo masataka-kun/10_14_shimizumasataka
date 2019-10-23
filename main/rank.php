@@ -46,7 +46,6 @@ if ($status == false) {
   //http://php.net/manual/ja/pdostatement.fetch.php
   while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $view .= '<li class="list-group-item">';
-    // $view .= '<p>' . $result['name'] . '-' . '<a href=' . $result['url'] . ' target=&quot;_blank&quot; rel=&quot;noopener&quot;>リンク</a>' . '-' . $result['comment'] . '-' . $result['score'] . '</p>';
     $view .= '<p>' . $result['name'] . '-' . $result['score'] . '</p>';
     $view .= '</li>';
   }
@@ -85,21 +84,6 @@ if ($status == false) {
           <?= $menu_rank ?>
         </ul>
       </div>
-
-      <!-- <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">ブックマーク登録</a>
-          </li>
-        </ul>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">データ一覧</a>
-          </li>
-        </ul>
-      </div> -->
     </nav>
   </header>
 

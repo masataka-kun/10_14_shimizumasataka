@@ -1,14 +1,8 @@
 <?php
-// セッションスタート
-// session_start();
-
 // 0.外部ファイル読み込み
 include('functions.php');
 
-// ログイン状態のチェック
-// checkSessionId();
-// $menu = menu();
-
+// ヘッダーメニュー読み込み
 $menu_nologin = menu_nologin();
 
 //1. DB接続
@@ -26,7 +20,6 @@ if ($status == false) {
 } else {
   while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $view .= '<li class="list-group-item">';
-    // $view .= '<p>' . $result['name'] . '-' . '<a href=' . $result['url'] . ' target=&quot;_blank&quot; rel=&quot;noopener&quot;>リンク</a>' . '-' . $result['comment'] . '-' . $result['score'] . '</p>';
     $view .= '<p>' . '<a href=' . $result['url'] . ' target=&quot;_blank&quot; rel=&quot;noopener&quot;>' . $result['name'] . '</a>' . '-' . $result['comment'] . '-' . $result['score'] . '</p>';
     $view .= '<a href="detail_nologin.php?id=' . $result['id'] . '" class="badge badge-primary">Edit</a>';
     $view .= '</li>';
@@ -66,22 +59,7 @@ if ($status == false) {
           <?= $menu_nologin ?>
         </ul>
       </div>
-
-      <!-- <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">ブックマーク登録</a>
-          </li>
-        </ul>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="rank.php">ランキング一覧</a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
+    </nav>
   </header>
 
   <div>

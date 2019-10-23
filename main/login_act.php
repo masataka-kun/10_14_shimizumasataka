@@ -30,7 +30,6 @@ if ($val['id'] != '') {
   // ログイン成功の場合はセッション変数に値を代入
   $_SESSION = array();
   $_SESSION['session_id'] = session_id();
-  // $_SESSION['chk_ssid'] = session_id();
   $_SESSION['kanri_flg'] = $val['kanri_flg'];
   $_SESSION['name'] = $val['name'];
   header('Location: select.php');

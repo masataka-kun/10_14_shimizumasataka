@@ -38,14 +38,6 @@ $menu_login = menu_login();
                     <?= $menu_login ?>
                 </ul>
             </div>
-
-            <!-- <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">ログインページ</a>
-                    </li>
-                </ul>
-            </div> -->
         </nav>
     </header>
 
