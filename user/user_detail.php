@@ -1,8 +1,20 @@
 <?php
+// セッションスタート
+session_start();
+
 // 関数ファイルの読み込み
 include('functions.php');
 
+// ログイン状態の確認
+checkSessionId();
+
+// ヘッダーメニュー呼び出し
+$menu = menu();
+
 // getで送信されたidを取得
+if (!isset($_GET['id'])) {
+  exit("Error");
+}
 $id = $_GET['id'];
 
 //DB接続します

@@ -1,14 +1,25 @@
 <?php
-//1. DB接続
-$dbn = 'mysql:dbname=gsacfd04_14;charset=utf8;port=3306;host=localhost';
-$user = 'root';
-$pwd = '';
+// セッションスタート
+session_start();
 
-try {
-  $pdo = new PDO($dbn, $user, $pwd);
-} catch (PDOException $e) {
-  exit('dbError:' . $e->getMessage());
+//0.外部ファイル読み込み
+include('functions.php');
+
+// ログイン状態チェック
+checkSessionId();
+
+// ヘッダー読み込み
+$menu = menu();
+$menu_admin = menu_admin();
+$menu_rank = '';
+if ($_SESSION['kanri_flg'] == 0) {
+  $menu_rank = $menu;
+} else {
+  $menu_rank = $menu_admin;
 }
+
+// 1.DB接続します。
+$pdo = connectToDb();
 
 //2. データ表示SQL作成
 //ワークテーブルの初期化
@@ -51,7 +62,7 @@ if ($status == false) {
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>todoリスト表示</title>
+  <title>ブックマーク</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <style>
     div {
@@ -68,7 +79,14 @@ if ($status == false) {
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+
+      <div class="navbar navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <?= $menu_rank ?>
+        </ul>
+      </div>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.php">ブックマーク登録</a>
@@ -81,7 +99,7 @@ if ($status == false) {
             <a class="nav-link" href="index.php">データ一覧</a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </nav>
   </header>
 

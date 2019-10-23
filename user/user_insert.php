@@ -36,8 +36,9 @@ $status = $stmt->execute();
 //データ登録処理後
 if ($status == false) {
   //SQL実行時にエラーがある場合（エラーオブジェクト取得して表示）
-  $error = $stmt->errorInfo();
-  exit('sqlError:' . $error[2]);
+  // $error = $stmt->errorInfo();
+  // exit('sqlError:' . $error[2]);
+  shoeSqlErrorMsg($stmt);
 } else {
   //index.phpへリダイレクト
   header('Location: user_index.php');

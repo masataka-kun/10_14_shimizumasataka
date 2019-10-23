@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: localhost
--- 生成日時: 2019 年 10 月 15 日 17:08
+-- 生成日時: 2019 年 10 月 22 日 10:11
 -- サーバのバージョン： 10.4.6-MariaDB
 -- PHP のバージョン: 7.3.9
 
@@ -54,14 +54,15 @@ INSERT INTO `gs_bm_table` (`id`, `name`, `url`, `comment`, `score`, `indate`) VA
 (11, 'ONEPEICE', 'https://www.amazon.co.jp/ONEPIECE-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9/b?ie=UTF8&node=289203011', '仲間になりたい', 5, '2019-10-09 19:51:21'),
 (12, 'ONEPEICE', 'https://www.amazon.co.jp/ONEPIECE-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9/b?ie=UTF8&node=289203011', '話長すぎ', 3, '2019-10-09 19:51:42'),
 (13, 'ONEPEICE', 'https://www.amazon.co.jp/ONEPIECE-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9/b?ie=UTF8&node=289203011', '強くなりすぎ', 3, '2019-10-09 19:51:58'),
-(14, 'ONEPEICE', 'https://www.amazon.co.jp/ONEPIECE-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9/b?ie=UTF8&node=289203011', '海賊王になりたい', 4, '2019-10-09 19:52:17'),
 (15, 'ONEPEICE', 'https://www.amazon.co.jp/ONEPIECE-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9/b?ie=UTF8&node=289203011', '悪魔の実食べたい', 4, '2019-10-09 19:52:34'),
 (16, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW6RrZypyZp6FfJmk3ZzjbmzT-AEjIPLAK3lfSEAifafTCrkC2mWizhoCqmgQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t1&hvqmt=e&hvrand=11763280971020882863&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', '今の時代に生まれてよかった', 5, '2019-10-10 20:51:51'),
 (17, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW6RrZypyZp6FfJmk3ZzjbmzT-AEjIPLAK3lfSEAifafTCrkC2mWizhoCqmgQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t1&hvqmt=e&hvrand=11763280971020882863&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', '世界感がすごい', 4, '2019-10-10 21:01:42'),
 (18, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW0ub5bMV8_dfPhYA17SYvQWEhgnhYwKkyeqVbeREEbOkFJ7Rrl5rQhoC0IsQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=13127973631121393133&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', 'おもろい、ちょっとあきた', 4, '2019-10-13 13:57:12'),
 (19, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW0ub5bMV8_dfPhYA17SYvQWEhgnhYwKkyeqVbeREEbOkFJ7Rrl5rQhoC0IsQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=13127973631121393133&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', 'おもろい、ちょっとあきたけど。。。　やっぱすごい！！！', 5, '2019-10-13 14:01:31'),
 (20, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW0ub5bMV8_dfPhYA17SYvQWEhgnhYwKkyeqVbeREEbOkFJ7Rrl5rQhoC0IsQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=13127973631121393133&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', 'おもろい', 4, '2019-10-13 14:02:06'),
-(21, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW0ub5bMV8_dfPhYA17SYvQWEhgnhYwKkyeqVbeREEbOkFJ7Rrl5rQhoC0IsQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=13127973631121393133&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', 'おもろい', 3, '2019-10-13 14:51:41');
+(21, 'キングダム', 'https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&adgrpid=50064565861&gclid=CjwKCAjw5_DsBRBPEiwAIEDRW0ub5bMV8_dfPhYA17SYvQWEhgnhYwKkyeqVbeREEbOkFJ7Rrl5rQhoC0IsQAvD_BwE&hvadid=259538309409&hvdev=c&hvlocphy=1009717&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=13127973631121393133&hvtargid=aud-759377471933%3Akwd-333121613179&hydadcr=14638_9424381&jp-ad-ap=0&tag=googhydr-22&ref=pd_sl_3ym70q9qpf_e', 'おもろい', 3, '2019-10-13 14:51:41'),
+(22, 'king golf', 'https://www.amazon.co.jp/KING-GOLF-1-%E5%B0%91%E5%B9%B4%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E4%BD%90%E3%80%85%E6%9C%A8/dp/4091215785', 'プロゴルファーになる', 3, '2019-10-22 16:06:04'),
+(23, 'king golf', 'https://www.amazon.co.jp/KING-GOLF-1-%E5%B0%91%E5%B9%B4%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E4%BD%90%E3%80%85%E6%9C%A8/dp/4091215785', 'ドレッド', 4, '2019-10-22 16:21:31');
 
 -- --------------------------------------------------------
 
@@ -84,9 +85,7 @@ CREATE TABLE `php02_table` (
 INSERT INTO `php02_table` (`id`, `task`, `deadline`, `comment`, `indate`) VALUES
 (2, 'kadai2', '2019-10-05', 'test', '2019-10-05 15:52:58'),
 (3, 'allohaBllosam', '2019-10-05', 'test', '2019-10-05 15:54:45'),
-(4, 'needls', '2019-10-06', 'shimizu', '2019-10-05 15:55:25'),
 (5, 'EngnierdGerments', '2019-10-06', 'suzuki', '2019-10-05 15:56:11'),
-(6, 'ape', '2019-10-06', 'nego', '2019-10-05 15:56:50'),
 (7, 'UnderCover', '2019-10-06', 'takahashi', '2019-10-05 15:57:16'),
 (8, 'stussy', '2019-10-06', 'stussyi', '2019-10-05 15:58:27'),
 (9, 'Supreme', '2019-10-06', '不明', '2019-10-05 15:59:37'),
@@ -114,9 +113,9 @@ CREATE TABLE `user_table` (
 
 INSERT INTO `user_table` (`id`, `name`, `lid`, `lpw`, `kanri_flg`, `life_flg`) VALUES
 (1, 'admin', 'sa', '1234', 1, 0),
-(2, 'masa', 't', 'nnnn1234', 1, 0),
-(3, 'aaaa', 'ty', 'mzn1234', 1, 0),
-(4, 'zzzzzzzz', 'a', 'da', 1, 1);
+(2, 'masa', 't', 'nnnn1234', 0, 0),
+(5, 'a', 'a', '1234', 0, 0),
+(7, 'abc', 'abc', '123', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -134,6 +133,7 @@ CREATE TABLE `wk_gs_bm_rank_table` (
 --
 
 INSERT INTO `wk_gs_bm_rank_table` (`name`, `score`) VALUES
+('king golf', 3.50),
 ('ONEPEICE', 4.00),
 ('キングダム', 4.30),
 ('珍遊記', 2.75);
@@ -168,7 +168,7 @@ ALTER TABLE `user_table`
 -- テーブルのAUTO_INCREMENT `gs_bm_table`
 --
 ALTER TABLE `gs_bm_table`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- テーブルのAUTO_INCREMENT `php02_table`
@@ -180,7 +180,7 @@ ALTER TABLE `php02_table`
 -- テーブルのAUTO_INCREMENT `user_table`
 --
 ALTER TABLE `user_table`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

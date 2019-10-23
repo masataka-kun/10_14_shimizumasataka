@@ -1,3 +1,18 @@
+<?php
+// セッションスタート
+session_start();
+
+// 0.外部ファイル読み込み
+include('functions.php');
+
+// ログイン状態のチェック
+checkSessionId();
+
+// ヘッダー呼び出し
+$menu = menu();
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -23,7 +38,14 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <?= $menu ?>
+                </ul>
+            </div>
+
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="user_index.php">ユーザー登録</a>
@@ -32,7 +54,7 @@
                         <a class="nav-link" href="user_select.php">ユーザー一覧</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
     </header>
 

@@ -1,6 +1,17 @@
 <?php
-//1. DB接続
+// セッションスタート
+session_start();
+
+//0.ファイル読み込み
 include('functions.php');
+
+// ログイン状態のチェック
+checkSessionId();
+
+// ヘッダー呼び出し
+$menu = menu();
+
+// 1．DB接続
 $pdo = connectToDb();
 
 //データ表示SQL作成
@@ -53,7 +64,14 @@ if ($status == false) {
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <?= $menu ?>
+        </ul>
+      </div>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="user_index.php">ユーザー登録</a>
@@ -62,7 +80,7 @@ if ($status == false) {
             <a class="nav-link" href="user_select.php">ユーザー一覧</a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </nav>
   </header>
 

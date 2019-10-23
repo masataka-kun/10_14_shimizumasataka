@@ -9,7 +9,7 @@ $id   = $_GET['id'];
 $pdo = connectTodb();
 
 //3．データ登録SQL作成
-$sql = 'DELETE FROM php02_table WHERE id=:id';
+$sql = 'DELETE FROM user_table WHERE id=:id';
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $status = $stmt->execute();
@@ -19,6 +19,6 @@ if ($status == false) {
   showSqlErrorMsg($stmt);
 } else {
   //select.phpへリダイレクト
-  header('Location: select.php');
+  header('Location: user_select.php');
   exit;
 }

@@ -7,7 +7,6 @@ include('functions.php');
 
 // ログイン状態のチェック
 checkSessionId();
-$menu = menu();
 $menu_admin = menu_admin();
 
 //1. DB接続
@@ -32,15 +31,6 @@ if ($status == false) {
     $view .= '</li>';
   }
 }
-
-// 4．selectヘッダー表示
-$menu_select = '';
-if ($_SESSION['kanri_flg'] == 0) {
-  $menu_select = $menu;
-} else {
-  $menu_select = $menu_admin;
-}
-
 ?>
 
 
@@ -72,10 +62,9 @@ if ($_SESSION['kanri_flg'] == 0) {
 
       <div class="navbar navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <?= $menu_select ?>
+          <?= $menu_admin ?>
         </ul>
       </div>
-
 
       <!-- <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">

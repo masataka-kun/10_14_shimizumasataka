@@ -1,4 +1,5 @@
 <?php
+include('functions.php');
 
 // 入力チェック
 // var_dump($_POST);
@@ -18,15 +19,7 @@ $score = $_POST['score'];
 
 
 //DB接続
-$dbn = 'mysql:dbname=gsacfd04_14;charset=utf8;port=3306;host=localhost';
-$user = 'root';
-$pwd = '';
-
-try {
-  $pdo = new PDO($dbn, $user, $pwd);
-} catch (PDOException $e) {
-  exit('dbError:' . $e->getMessage());
-}
+$pdo = connectToDb();
 
 //データ登録SQL作成
 $sql = 'INSERT INTO gs_bm_table(id, name, url, comment, score, indate)VALUES(NULL, :a1, :a2, :a3, :a4, sysdate())';

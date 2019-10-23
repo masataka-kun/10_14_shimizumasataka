@@ -1,13 +1,14 @@
 <?php
 // セッションスタート
-session_start();
+// session_start();
 
 // 関数ファイルの読み込み
 include('functions.php');
 
 // ログイン状態のチェック
-checkSessionId();
-$menu = menu();
+// checkSessionId();
+// $menu = menu();
+$menu_nologin = menu_nologin();
 
 // getで送信されたidを取得
 if (!isset($_GET['id'])) {
@@ -72,7 +73,7 @@ if ($status == false) {
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <?= $menu ?>
+                    <?= $menu_nologin ?>
                 </ul>
             </div>
 
@@ -96,30 +97,32 @@ if ($status == false) {
     <form action="update.php" method="post" name="form">
         <div class="form-group">
             <label for="name">BookName</label>
-            <input type="text" class="form-control" id="name" name="name" value=<?= $rs['name'] ?>>
+            <input type="text" readonly class="form-control" id="name" name="name" placeholder=<?= $rs['name'] ?>>
         </div>
         <div class="form-group">
             <label for="url">URL</label>
-            <input type="text" class="form-control" id="url" name="url" value=<?= $rs['url'] ?>>
+            <input type="text" readonly class="form-control" id="url" name="url" placeholder=<?= $rs['url'] ?>>
         </div>
         <div class="form-group">
             <label for="comment">Comment</label>
-            <textarea class="form-control" id="comment" name="comment" rows="3"><?= $rs['comment'] ?></textarea>
+            <!-- <textarea class="form-control" id="comment" name="comment" rows="3"><?= $rs['comment'] ?></textarea> -->
+            <textarea readonly class="form-control" id="comment" name="comment" rows="3" placeholder=<?= $rs['comment'] ?>></textarea>
         </div>
         <div class="form-group">
             <label for="score">Score</label>
-            <select required class="form-control" id="score" name="score">
-                <option value="" hidden><?= $rs['score'] ?></option>
-                <option value="1">1</option>>
+            <input type="text" readonly class="form-control" id="url" name="url" placeholder=<?= $rs['score'] ?>>
+            <!-- <select required class="form-control" id="score" name="score" placeholder=<?= $rs['score'] ?>>
+                <option value="" hidden><?= $rs['score'] ?></option> -->
+            <!-- <option value="1">1</option>>
                 <option value="2">2</option>>
                 <option value="3">3</option>>
                 <option value="4">4</option>>
                 <option value="5">5</option>>
-            </select>
+            </select> -->
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <button type="submit" class="btn btn-primary" onclick="return checkForm()" ;>Submit</button>
-        </div>
+        </div> -->
         <input type="hidden" name="id" value="<?= $rs['id'] ?>">
 
     </form>
