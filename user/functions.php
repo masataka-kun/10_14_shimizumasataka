@@ -44,10 +44,10 @@ function checkSessionId()
 function menu()
 {
   $menu = '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/index.php">ブックマーク登録</a></li>';
-  $menu .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasaataka/main/select.php">登録一覧</a></li>';
+  $menu .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/select.php">登録一覧</a></li>';
   $menu .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/rank.php">ランキング</a></li>';
   $menu .= '<li class="nav-item"><a class="nav-link" href="user_index.php">ユーザー登録</a></li>';
   $menu .= '<li class="nav-item"><a class="nav-link" href="user_select.php">ユーザー一覧</a></li>';
-  $menu .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasatakaa/main/logout.php">ログアウト</a></li>';
+  $menu .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/logout.php">ログアウト</a></li>';
   return $menu;
 }

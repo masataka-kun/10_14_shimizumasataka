@@ -4,6 +4,7 @@ session_start();
 
 // 0.外部ファイル読み込み
 include('functions.php');
+// include(dirname(__FILE__) . "/../main/functions.php");
 
 // ログイン状態のチェック
 checkSessionId();
