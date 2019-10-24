@@ -1,5 +1,7 @@
 <?php
-include('functions.php');
+// ファイル読み込み
+include(dirname(__FILE__) . '/../main/functions.php');
+
 // 入力チェック
 if (
   !isset($_POST['name']) || $_POST['name'] == '' ||

@@ -3,7 +3,7 @@
 session_start();
 
 // 関数ファイルの読み込み
-include('functions.php');
+include(dirname(__FILE__) . '/../main/functions.php');
 
 // ログイン状態の確認
 checkSessionId();

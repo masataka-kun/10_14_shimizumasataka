@@ -1,6 +1,6 @@
 <?php
 // 関数ファイル読み込み
-include('functions.php');
+include(dirname(__FILE__) . '/../main/functions.php');
 
 //入力チェック(受信確認処理追加)
 if (

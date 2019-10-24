@@ -1,6 +1,6 @@
 <?php
 // 関数ファイルの読み込み
-include('functions.php');
+include(dirname(__FILE__) . "/../main/functions.php");
 
 //1. GETデータ取得
 $id   = $_GET['id'];
