@@ -3,14 +3,13 @@
 session_start();
 
 // 0.外部ファイル読み込み
-include('functions.php');
-// include(dirname(__FILE__) . "/../main/functions.php");
+include(dirname(__FILE__) . "/../main/functions.php");
 
 // ログイン状態のチェック
 checkSessionId();
 
 // ヘッダー呼び出し
-$menu = menu();
+$menu_user = menu_user();
 
 ?>
 
@@ -42,20 +41,9 @@ $menu = menu();
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <?= $menu ?>
+                    <?= $menu_user ?>
                 </ul>
             </div>
-
-            <!-- <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_index.php">ユーザー登録</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_select.php">ユーザー一覧</a>
-                    </li>
-                </ul>
-            </div> -->
         </nav>
     </header>
 
