@@ -37,43 +37,14 @@ function checkSessionId()
 // menuを決める
 function menu()
 {
-    $menu = '<li class="nav-item"><a class="nav-link" href="index.php">ブックマーク登録</a></li><li class="nav-item"><a class="nav-link" href="select.php">登録一覧</a></li>';
-    $menu .= '<li class="nav-item"><a class="nav-link" href="rank.php">ランキング</a></li>';
+    $menu = '<li class="nav-item"><a class="nav-link" href="canvas.php">CANVAS</a></li>';
     $menu .= '<li class="nav-item"><a class="nav-link" href="logout.php">ログアウト</a></li>';
     return $menu;
 }
 
-function menu_nologin()
+function menu_canvas()
 {
-    $menu_nologin = '<li class="nav-item"><a class="nav-link" href="select_nologin.php">登録一覧</a></li>';
-    $menu_nologin .= '<li class="nav-item"><a class="nav-link" href="logout.php">ログアウト</a></li>';
-    return $menu_nologin;
-}
-
-function menu_admin()
-{
-    $menu_admin = '<li class="nav-item"><a class="nav-link" href="index.php">ブックマーク登録</a></li>';
-    $menu_admin .= '<li class="nav-item"><a class="nav-link" href="select.php">登録一覧</a></li>';
-    $menu_admin .= '<li class="nav-item"><a class="nav-link" href="rank.php">ランキング</a></li>';
-    $menu_admin .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/user/user_index.php">ユーザー登録</a></li>';
-    $menu_admin .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/user/user_select.php">ユーザー一覧</a></li>';
-    $menu_admin .= '<li class="nav-item"><a class="nav-link" href="logout.php">ログアウト</a></li>';
-    return $menu_admin;
-}
-
-function menu_login()
-{
-    $menu_login = '<li class="nav-item"><a class="nav-link" href="select_nologin.php">登録一覧</a></li>';
-    return $menu_login;
-}
-
-function menu_user()
-{
-    $menu_user = '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/index.php">ブックマーク登録</a></li>';
-    $menu_user .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/select.php">登録一覧</a></li>';
-    $menu_user .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/rank.php">ランキング</a></li>';
-    $menu_user .= '<li class="nav-item"><a class="nav-link" href="user_index.php">ユーザー登録</a></li>';
-    $menu_user .= '<li class="nav-item"><a class="nav-link" href="user_select.php">ユーザー一覧</a></li>';
-    $menu_user .= '<li class="nav-item"><a class="nav-link" href="/09_14_shimizumasataka/main/logout.php"">ログアウト</a></li>';
-    return $menu_user;
+    $menu_canvas = '<li class="nav-item"><a class="nav-link" href="index.php">投稿一覧</a></li>';
+    $menu_canvas .= '<li class="nav-item"><a class="nav-link" href="logout.php">ログアウト</a></li>';
+    return $menu_canvas;
 }

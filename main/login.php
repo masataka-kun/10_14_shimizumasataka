@@ -2,9 +2,6 @@
 //外部ファアイル読み込み
 include('functions.php');
 
-// ヘッダーメニュー読み込み
-$menu_login = menu_login();
-
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +32,6 @@ $menu_login = menu_login();
 
             <div class="navbar navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <?= $menu_login ?>
                 </ul>
             </div>
         </nav>

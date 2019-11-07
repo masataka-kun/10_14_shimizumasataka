@@ -32,7 +32,7 @@ if ($val['id'] != '') {
   $_SESSION['session_id'] = session_id();
   $_SESSION['kanri_flg'] = $val['kanri_flg'];
   $_SESSION['name'] = $val['name'];
-  header('Location: select.php');
+  header('Location: canvas.php');
 } else {
   //ログイン失敗の場合はログイン画面へ戻る
   header('Location: login.php');
