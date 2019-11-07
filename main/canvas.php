@@ -82,6 +82,8 @@ $menu_canvas = menu_canvas();
             <!-- ネガポジ変換 フィルタ-->
             <input type="button" value="ネガポジフィルタ" onclick="NegaButtonClick();" />
 
+            <!-- ネガポジ変換 フィルタ-->
+            <input type="button" value="白黒フィルタ" onclick="ShiroButtonClick();" />
         </div>
 
         <!-- コメント入力 -->
